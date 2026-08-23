@@ -106,9 +106,14 @@ chmod +x "$root_dir/gradlew" 2>/dev/null || true
 
 apk="$root_dir/app/build/outputs/apk/release/app-release.apk"
 if [[ -f "$apk" ]]; then
+    release_dir="$root_dir/release"
+    mkdir -p "$release_dir"
+    cp "$apk" "$release_dir/invoice-gen.apk"
     echo ""
-    echo "✅ Release APK built successfully: $apk"
-    echo "   Size: $(du -h "$apk" | cut -f1)"
+    echo "✅ Release APK built successfully!"
+    echo "   Source: $apk"
+    echo "   Copied: $release_dir/invoice-gen.apk"
+    echo "   Size: $(du -h "$release_dir/invoice-gen.apk" | cut -f1)"
 else
     fail "Release APK not found at expected location."
 fi

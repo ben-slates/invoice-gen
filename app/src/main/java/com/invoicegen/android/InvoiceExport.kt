@@ -181,9 +181,17 @@ object InvoiceExporter {
 </style>
 </head>
 <body>
-  <div>{{logo}}</div>
-  <div class="wordmark">INVOICE</div>
-  <div class="wordmark-sub">{{businessName}}</div>
+  <table style="width:100%; border-collapse:collapse; margin-bottom:0;">
+    <tr>
+      <td style="vertical-align:top; width:60%;">
+        <div>{{logo}}</div>
+        <div class="wordmark-sub" style="margin:6px 0 0 0;">{{businessName}}</div>
+      </td>
+      <td style="vertical-align:middle; width:40%; text-align:right;">
+        <div class="wordmark" style="margin:0;">INVOICE</div>
+      </td>
+    </tr>
+  </table>
   <div class="top-rule"></div>
   <table class="meta-table">
     <tr>

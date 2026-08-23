@@ -45,3 +45,7 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Local build files
+local.properties
+release-key.jks
