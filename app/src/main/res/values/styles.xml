@@ -1,0 +1,8 @@
+<resources>
+  <style name="Theme.InvoiceGen" parent="android:style/Theme.Material.Light.NoActionBar">
+    <item name="android:fontFamily">sans</item>
+    <item name="android:windowLightStatusBar">true</item>
+    <item name="android:statusBarColor">@color/invoicegen_background</item>
+    <item name="android:navigationBarColor">@color/invoicegen_background</item>
+  </style>
+</resources>
